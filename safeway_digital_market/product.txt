@@ -1,0 +1,7 @@
+HPlaptop,1500,Electronics,5,0912345678
+Earphone,25,Electronics,9,0912345678
+Tshirt,19,Clothing,40,0922334455
+Grenade,1000,Classified,7,0999666123
+Gun,500,Classified,6,0999666123
+bullet_proof_vest,300,Classified,9,0999666123
+Hyundi,2500,Car,4,0923232323

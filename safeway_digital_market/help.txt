@@ -1,0 +1,10 @@
+HOW TO USE:
+The program has three main functionalities. The first is buyers service, the second is Seller service and the third is Admin service.
+
+# The buyer service helps buyers to view products and buy one of them. 
+# The seller service helps sellers to post and sell their products with fixed price.
+# The Admin service is only accessable by admins to administer activites happening in the program.
+
+In addition, Following the instructions while runtime will provide help when needed.
+
+Thanks and enjoy!!!

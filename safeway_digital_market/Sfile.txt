@@ -1,0 +1,5 @@
+700100,John,1234,125,0912345678,email@gmail.com
+700200,Natalia,123456,500,0911223344,Nat@gmail.com
+700300,Chris,angel,1190,0922334455,Chris@gmail.com
+700400,Hitler,nazi,3300,0999666123,Hitler@gmail.com
+700007,Kali,lin123,3000,0923232323,lin123@gmail.com
