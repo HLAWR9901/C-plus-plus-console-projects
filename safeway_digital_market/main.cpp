@@ -192,15 +192,14 @@ void service() {
 
 void buyerService() {
     vector<Buyer> buyers = loadBuyerData();
-
+    preloader:
     cout << "\nBuyer Service:\n"
          << "1. Sign Up\n"
          << "2. Log In\n"
          << "Choose an option: ";
-    preloader:
+    
     int option;
     cin >> option;
-    loader:
     if (option == 1) {
         Buyer newBuyer;
         newBuyer.accountNumber = getNextBuyerAccountNumber();
@@ -219,9 +218,9 @@ void buyerService() {
 
         buyers.push_back(newBuyer);
         saveBuyerData(buyers);
-
-        cout << "Registration Successful!" << endl;
-        option = 2; goto loader;
+        system("cls");
+        cout <<"Your Account number is " << newBuyer.accountNumber<< "\nRegistration Successful!" << endl;
+        goto preloader;
         // then what
     } else if (option == 2) {
         int accountNumber;
@@ -286,8 +285,8 @@ void sellerService() {
 
         sellers.push_back(newSeller);
         saveSellerData(sellers);
-
-        cout << "Registration Successful!" << endl;
+        system("cls");
+        cout << "Your Account number is " << newSeller.accountNumber<< "\nRegistration Successful!" << endl;
         option = 2; goto loader;
         // then what
     } else if (option == 2) {
@@ -615,7 +614,6 @@ void displayProductTable(const vector<Product>& products) {
 }
 
 void buyProduct(vector<Product>& products, vector<Buyer>& buyers) {
-    accNum:
     int accountNumber;
     cout << "Enter your Account Number: ";
     cin >> accountNumber;
@@ -669,8 +667,8 @@ void buyProduct(vector<Product>& products, vector<Buyer>& buyers) {
 	    goto validNum;
         }
     } else {
-        cout << "Buyer with the given account number not found. Please check your Account Number." << endl;
-        goto accNum;
+        cout << "Buyer with the given account number not found." << endl;
+        exit(7);
     }
 }
 
